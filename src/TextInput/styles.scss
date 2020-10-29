@@ -1,0 +1,14 @@
+@import '../styles/variables.scss';
+
+input[type='text'],
+input[type='email'] {
+    border-radius: 0.3rem;
+    border: 1px solid $gray;
+    padding: 0.5rem;
+    width: 100%;
+
+    &:focus {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba($blue, 0.6);
+        outline: 0 none;
+    }
+}
