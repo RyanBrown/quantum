@@ -1,0 +1,12 @@
+@import '../styles/variables.scss';
+
+.close {
+    font-family: $base-font;
+    font-weight: 600;
+    font-size: 2rem;
+    opacity: 1;
+
+    &:hover {
+        color: red;
+    }
+}
