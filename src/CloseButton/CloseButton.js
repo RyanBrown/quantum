@@ -2,24 +2,24 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-// eslint-disable-next-line
 import styles from './styles.scss';
 
 const propTypes = {
     id: PropTypes.string,
-    label: PropTypes.string.isRequired,
+    label: PropTypes.string,
+    type: PropTypes.oneOf(['button', 'submit', 'reset', null]),
     onClick: PropTypes.func,
 };
 
 const defaultProps = {
-    label: 'Close',
+    type: 'button',
 };
 
 const CloseButton = React.forwardRef(({ label, onClick, className, ...props }, ref) => (
     <button
         id={props.id}
         ref={ref}
-        type='button'
+        type={props.type}
         styleName={classNames('close', className && styles[className])}
         onClick={onClick}
         {...props}

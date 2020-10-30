@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import FilterBlock from './FilterBlock/FilterBlock';
 import ActionBar from './ActionBar/ActionBar';
+import Generated from './Generated/Generated';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -12,6 +13,7 @@ ReactDOM.render(
         </header>
         <FilterBlock />
         <ActionBar />
+        <Generated />
     </React.StrictMode>,
     document.getElementById('root')
 );
